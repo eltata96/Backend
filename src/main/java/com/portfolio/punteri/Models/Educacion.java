@@ -12,14 +12,14 @@ public class Educacion {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idEdu;
     private String TituloEdu;
-    private int fechaEdu;
+    private String fechaEdu;
     private String descEdu;
     private String imgEdu;
 
     public Educacion() {
     }
 
-    public Educacion(Long idEdu, String TituloEdu, int fechaEdu, String descEdu, String imgEdu) {
+    public Educacion(Long idEdu, String TituloEdu, String fechaEdu, String descEdu, String imgEdu) {
         this.idEdu = idEdu;
         this.TituloEdu = TituloEdu;
         this.fechaEdu = fechaEdu;
@@ -44,11 +44,11 @@ public class Educacion {
         this.TituloEdu = TituloEdu;
     }
 
-    public int getFechaEdu() {
+    public String getFechaEdu() {
         return fechaEdu;
     }
 
-    public void setFechaEdu(int fechaEdu) {
+    public void setFechaEdu(String fechaEdu) {
         this.fechaEdu = fechaEdu;
     }
 
