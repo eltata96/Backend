@@ -12,14 +12,14 @@ public class Experiencia {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idExp;
     private String TituloExp;
-    private int fechaExp;
+    private String fechaExp;
     private String descExp;
     private String imgExp;
 
     public Experiencia() {
     }
 
-    public Experiencia(Long idExp, String TituloExp, int fechaExp, String descExp, String imgExp) {
+    public Experiencia(Long idExp, String TituloExp, String fechaExp, String descExp, String imgExp) {
         this.idExp = idExp;
         this.TituloExp = TituloExp;
         this.fechaExp = fechaExp;
@@ -43,11 +43,11 @@ public class Experiencia {
         this.TituloExp = TituloExp;
     }
 
-    public int getFechaExp() {
+    public String getFechaExp() {
         return fechaExp;
     }
 
-    public void setFechaExp(int fechaExp) {
+    public void setFechaExp(String fechaExp) {
         this.fechaExp = fechaExp;
     }
 
